@@ -38,12 +38,14 @@ npm install -g pnpm
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-repo/knexpresso.git
    cd knexpresso
    ```
 
 2. Install dependencies using `pnpm`:
+
    ```bash
    pnpm install
    ```
@@ -88,7 +90,6 @@ This is the primary configuration file that Knexpresso uses to understand the da
     }
   ]
 }
-
 ```
 
 - **Database Configuration**: Defines the database engine (e.g., PostgreSQL, SQLite) and connection details.

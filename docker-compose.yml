@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   db:
@@ -76,7 +76,7 @@ services:
     image: alpine
     container_name: knexpresso-test
     working_dir: /usr/src/app
-    command: sh -c "sh -x /usr/src/app/curl-tests.sh"  # Adding -x for debugging
+    command: sh -c "sh -x /usr/src/app/curl-tests.sh" # Adding -x for debugging
     volumes:
       - ./curl-tests.sh:/usr/src/app/curl-tests.sh
     depends_on:
@@ -84,7 +84,6 @@ services:
         condition: service_healthy
     networks:
       - knexpresso-network
-
 
 networks:
   knexpresso-network:
